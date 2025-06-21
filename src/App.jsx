@@ -57,13 +57,13 @@ useEffect(() => {
 
   return (
     <>
-      <div className='w-8/12 mx-auto'>
-        <div className='flex justify-between items-center'>
+      <div className='w-full sm:w-8/12 px-4 mx-auto'>
+        <div className='flex flex-col sm:flex-row justify-between items-center text-center gap-2 '>
           <div className='flex gap-2 items-center'>
-            <h3 className='font-medium text-xl'>Hello ,</h3>
-            <h2 className='font-semibold text-3xl text-mainRed'>{getGreeting(time.hour())} !</h2>
+            <h3 className='font-medium text-xl '>Hello ,</h3>
+            <h2 className='font-semibold text-3xl text-mainRed '>{getGreeting(time.hour())} !</h2>
           </div>
-          <div className='flex'>
+          <div className='flex '>
             <h5 className='font-medium'>Time: </h5>
             <p className='ps-2 font-semibold text-mainRed'>{time.format('HH:mm:ss A')}</p>
           </div>
@@ -74,7 +74,7 @@ useEffect(() => {
         </div>
       </div>
 
-      <div className='w-5/12 mx-auto'>
+      <div className='w-full sm:w-5/12 px-4 mx-auto'>
         <form className="mx-auto mt-5">
           <div className="relative">
             <input ref={inputref} type="search" id="default-search" className="block w-full p-4 text-sm text-white border border-gray-300 rounded-full  focus:ring-blue-500 focus:border-blue-500 bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 placeholder:italic dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Add New Task " required />
